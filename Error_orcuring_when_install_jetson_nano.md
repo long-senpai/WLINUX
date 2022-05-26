@@ -131,8 +131,8 @@ sudo ln -s ../vino-server.service ./.
 - Configure the VNC server
 
 ```bash
-gsettings set org.gnome.Vino authentication-methods "['vnc']"
-gsettings set org.gnome.Vino vnc-password $(echo -n '6262Ando286'|base64)
+gsettings set org.gnome.Vino prompt-enabled false
+gsettings set org.gnome.Vino require-encryption false
 ```
 
 - Set a password to access the VNC server
